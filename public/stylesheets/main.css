@@ -2,8 +2,12 @@ body {
 	background-color:#f0f0f0;
 }
 
-.half-size{
-	width: 40%;
+.half-size {
+	width: 80%;
+	display: inline-block;
+} 
+.fifth-size {
+	width: 20%;
 	display: inline-block;
 } 
 
