@@ -31,7 +31,6 @@
       <img src="surprise.png" />
     </div>
     <canvas id="myCanvas" width="400" height="350"></canvas>  
-
   <p>
   </body>
   <script>
@@ -90,7 +89,7 @@
       }
 
       function callback(response) {
-          console.log(response[0].faceAttributes.emotion);
+          console.log(response);
           var emotion = response[0].faceAttributes.emotion;
           var max = 0;
           var maxProp = "";

@@ -34,7 +34,6 @@ app.post('/image', (req, res) => {
 	AWS.config.loadFromPath('./s3_config.json');
 	var s3Bucket = new AWS.S3( { params: {Bucket: 'face-detect-testingtime'} } );
 
-	console.log(req.body.base64.replace(/^data:image\/png;base64,/, ""));
 	buf = new Buffer(req.body.base64.replace(/^data:image\/png;base64,/, ""),'base64')
 	var filename = "image-" + Math.random() + ".png";
 	var data = {
